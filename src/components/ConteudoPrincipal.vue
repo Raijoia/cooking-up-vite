@@ -1,13 +1,11 @@
 <script lang="ts">
-
-
-  export default {
-    data() {
-      return {
-        ingredientes: ['Alho', 'Manteiga', 'Orégano'],
-      }
+export default {
+  data() {
+    return {
+      ingredientes: ["Alho", "Manteiga", "Orégano"],
     }
-  }
+  },
+}
 </script>
 
 <template>
@@ -17,7 +15,9 @@
     </section>
 
     <ul class="ingredientes-sua-lista">
-      <li v-for="ingrediente in ingredientes" class="ingrediente">{{ ingrediente }}</li>
+      <li v-for="ingrediente in ingredientes" :key="ingrediente" class="ingrediente">
+        {{ ingrediente }}
+      </li>
     </ul>
   </main>
 </template>
