@@ -14,7 +14,7 @@ export async function obterCategorias() {
 
 export async function obterReceita() {
   const reposta = await fetch(URLRECEITA)
-  const receitas: IReceita = await reposta.json()
+  const receitas: IReceita[] = await reposta.json()
 
   return receitas
 }

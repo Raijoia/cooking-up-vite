@@ -39,6 +39,7 @@ export default {
     
     <MostrarReceitas 
       v-else-if="conteudo === 'MostrarReceitas'" 
+      @mudarConteudo="mudarConteudo('SelecionarIngredientes')"
     />
   </main>
 </template>
