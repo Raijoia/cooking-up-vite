@@ -41,6 +41,7 @@ export default {
       />
       
       <MostrarReceitas 
+        :ingredientes="ingredientes"
         v-else-if="conteudo === 'MostrarReceitas'" 
         @mudarConteudo="mudarConteudo('SelecionarIngredientes')"
       />
